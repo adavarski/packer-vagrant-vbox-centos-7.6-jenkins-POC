@@ -8,7 +8,7 @@
      ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
      cat > /etc/docker/daemon.json <<EOT
 {
-    "insecure-registries" : ["docker.infra.atscale.com"]
+    "insecure-registries" : ["KYR"]
 }
 EOT
      usermod -aG docker $USER
