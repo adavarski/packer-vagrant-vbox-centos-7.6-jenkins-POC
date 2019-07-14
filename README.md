@@ -2,7 +2,7 @@
 Packer templates to bake VirtualBox image (vagrant)
 
 ### Purpose
-This repository store sample Packer template required to create a Vagrant virtualbox base CentOS 7 x86_64 box using Packer for jenkins slaves
+This repository store sample Packer template required to create a Vagrant virtualbox base CentOS 7 x86_64 box using Packer for jenkins (master and slave)
 
 ### Requirements
 The following software must be installed/present on your local machine before you can use Packer to build the Vagrant box file:
@@ -18,7 +18,9 @@ The following software must be installed/present on your local machine before yo
 Make sure all the required software is installed, then cd to the directory containing this repo files, and run:
 
 `$ packer build template.json`
-
+`$ packer build jenkins-master-template.json
+`$ packer build jenkins-slave-template.json
+ 
 After a few minutes, Packer should tell you the box was generated successfully
 
 ```
