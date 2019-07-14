@@ -7,3 +7,5 @@ usermod --shell /bin/bash jenkins
  cat >> /etc/sudoers <<EOT
 jenkins ALL=(ALL)       NOPASSWD: ALL
 EOT
+rsync .......from backup tar.gz
+systemctl restart jenkins
