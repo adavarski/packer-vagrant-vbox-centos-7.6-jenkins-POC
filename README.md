@@ -10,17 +10,16 @@ The following software must be installed/present on your local machine before yo
 * Packer
 * VirtualBox (needed to build the VirtualBox box)
 
-### CentOS Packer Template:
+### CentOS Packer Template example (jenkins slave):
 
-* [template.json](https://github.com/adavarski/packer-vagrant-virtualbox-centos7.6-jenkins-slave/blob/master/template.json)
+* [template.json](https://github.com/adavarski/packer-vagrant-virtualbox-centos7.6-jenkins-slave/blob/master/template-jenkins-slave.json)
 
 ### Usage
 Make sure all the required software is installed, then cd to the directory containing this repo files, and run:
-
-`$ packer build template.json`
-`$ packer build jenkins-master-template.json
-`$ packer build jenkins-slave-template.json
- 
+```
+$ packer build template-jenkins-master.json
+$ packer build template-jenkins-slave.json
+``` 
 After a few minutes, Packer should tell you the box was generated successfully
 
 ```
