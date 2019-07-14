@@ -12,7 +12,7 @@ The following software must be installed/present on your local machine before yo
 
 ### CentOS Packer Template example (jenkins slave):
 
-* [template.json](https://github.com/adavarski/packer-vagrant-virtualbox-centos7.6-jenkins/blob/master/template-jenkins-slave.json)
+* [template-jenkins-slave.json](https://github.com/adavarski/packer-vagrant-vbox-centos-7.6-jenkins-POC/blob/master/template-jenkins-slave.json)
 
 ### Usage
 Make sure all the required software is installed, then cd to the directory containing this repo files, and run:
